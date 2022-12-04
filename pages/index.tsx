@@ -21,8 +21,32 @@ export const Intro = () => {
             Minecraft and wanted to make my own games, so I bought a 500 page Java book and got to work,
             eventually, I was able to create my first game of Pong! Soon I started working on more complicated
             games, eventually switching to C++ and later on C#, it was at this point that I started, using git
-            and GitHub to save my projects.
+            and GitHub to save my projects. My programming path was backwards I could say or atleast opposite to most people,
+            because I learned C++ before I learned HTML. But eventually I did, my focus switched from wanting to make games,
+            into wanting to make something more practical, I mean the internet is everywhere now and a website doesn't just have,
+            to run in your browser, it can also be integrated into both mobile and desktop apps with the use of Electron. But I never
+            liked much the traditional way of web-development, it was hard to wrap my head around separating the html from the javascript,
+            and I realized it was difficult to work like that, so I decided to look into React and I fell in love. Currently I use Nextjs,
+            for all sites including this one, but I am able to use React with any stack as I can learn new frameworks easily.
         </p>
+    )
+}
+
+export const KnownLanguages = () => {
+    const languageLinkClass = "my-2 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 hover:scale-105"
+
+    return (
+        <ul className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-green-600 text-xl mt-8">
+            <li className={languageLinkClass}><Link href="/java">Java</Link></li>
+            <li className={languageLinkClass}><Link href="/cpp">C++</Link></li>
+            <li className={languageLinkClass}><Link href="/c#">C#</Link></li>
+            <li className={languageLinkClass}><Link href="/go">Go</Link></li>
+            <li className={languageLinkClass}><Link href="/javascript">Javascript</Link></li>
+            <li className={languageLinkClass}><Link href="/typescript">Typescript</Link></li>
+            <li className={languageLinkClass}><Link href="/rust">Rust</Link></li>
+            <li className={languageLinkClass}><Link href="/nim">Nim</Link></li>
+            <li className={languageLinkClass}><Link href="/python">Python</Link></li>
+        </ul>
     )
 }
 
@@ -88,6 +112,7 @@ const Index = () => {
         <main className="bg-slate-900">
             <Ribbon />
             <Intro />
+            <KnownLanguages />
             <Project 
                 details= {
                     {
@@ -111,22 +136,6 @@ const Index = () => {
                     "/../public/lotsw/farm_menu.png"
                 ]} 
                 url="https://github.com/seiyadragon/Lords-of-the-Sword"
-            />
-            <Project
-                details={
-                    {
-                        name: "Janux-cxx",
-                        languages: ["C++", "GLSL"],
-                        description: `
-                            Janux-css was my first attempt at an opengl rendering engine/framework,
-                            at first the scope of the project was an entire game engine, but I soon realized,
-                            that was way beyond my scope and abality to do by myself in a timely manner.
-                        `,
-                        year: "2020"
-                    }
-                }
-                images={[]}
-                url="https://github.com/seiyadragon/janux-cxx"
             />
         </main>
     )
