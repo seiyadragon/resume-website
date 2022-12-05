@@ -38,22 +38,65 @@ type LanguageSectionProps = {
 }
 
 export const LanguageSection = ({language, description}: LanguageSectionProps) => {
+    const [isMenuActive, setMenuActive] = useState(false)
+
     return (
-        <section>
-            <button className="my-2 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 transition hover:scale-105"></button>
-        </section>
+        <li className="w-full flex flex-col items-center">
+            <button 
+                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 transition hover:scale-105"
+                onClick={() => setMenuActive(!isMenuActive)}
+            >
+                {language}
+            </button>
+            {isMenuActive &&
+                <section className="mb-4 bg-slate-800 lg:w-1/2 sm:w-full py-2 px-2">
+                    {description}
+                </section>
+            }
+        </li>
     )
 }
 
 export const KnownLanguages = () => {
     return (
         <ul className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-green-600 text-xl mt-8">
-            <li>
-                <LanguageSection
-                    language="Javascript"
-                    description=""
-                />
-            </li>
+            <LanguageSection
+                language="Java"
+                description={`
+                    Java was the first programming language I ever learned. And so my introduction
+                    to programming, was through Java. Because of that I have object oriented concepts
+                    pretty well understood. In fact object oriented is still my preffered method of
+                    programming. I also took a Java class in college which refreshed my memory on
+                    the language but on the day to day I do not use it a lot.
+                `}
+            />
+            <LanguageSection
+                language="C++"
+                description={`
+                    In my early days of programming, I wanted to create videogames.
+                    And what other language would you use for that purpose? C++ was tedious, setting up
+                    projects with CMake was annoying to say the least. And basically anything you wanted to do,
+                    you needed to program yoursef because it was either that or finding some library,
+                    which would be harder to include in your project anyway. All joking aside, C++ is a
+                    very powerful language, and if the package managers for it were as good as npm I would
+                    definitely use it more. I love the control it gives you over your data, with pointers and
+                    all that. Using C++ I learned a lot about OpenGL, and graphics programming including GLSL.
+                `}
+            />
+            <LanguageSection
+                language="Javascript"
+                description={`
+                    Javascript was a language I started to learn during my sophmore year
+                    of highschool during a web development class. At first I did not like it
+                    because it was different from all the static typed/compiled languages I
+                    had used before. However after using it for years I've come to fall in love
+                    with the language, with how free it is. What I mean is in Javascript when
+                    you want to do something, you just do it and the language allows you, now
+                    any errors or bugs created by this is up to you to solve, but Javascript
+                    lets you do it. Currently Javascript is the language that I've used the most,
+                    and it's the one that I see myself continuing to use for many years in the future.
+                `}
+            />
         </ul>
     )
 }
