@@ -32,20 +32,28 @@ export const Intro = () => {
     )
 }
 
-export const KnownLanguages = () => {
-    const languageLinkClass = "my-2 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 hover:scale-105"
+type LanguageSectionProps = {
+    language: string,
+    description: string
+}
 
+export const LanguageSection = ({language, description}: LanguageSectionProps) => {
+    return (
+        <section>
+            <button className="my-2 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 transition hover:scale-105"></button>
+        </section>
+    )
+}
+
+export const KnownLanguages = () => {
     return (
         <ul className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-green-600 text-xl mt-8">
-            <li className={languageLinkClass}><Link href="/java">Java</Link></li>
-            <li className={languageLinkClass}><Link href="/cpp">C++</Link></li>
-            <li className={languageLinkClass}><Link href="/c#">C#</Link></li>
-            <li className={languageLinkClass}><Link href="/go">Go</Link></li>
-            <li className={languageLinkClass}><Link href="/javascript">Javascript</Link></li>
-            <li className={languageLinkClass}><Link href="/typescript">Typescript</Link></li>
-            <li className={languageLinkClass}><Link href="/rust">Rust</Link></li>
-            <li className={languageLinkClass}><Link href="/nim">Nim</Link></li>
-            <li className={languageLinkClass}><Link href="/python">Python</Link></li>
+            <li>
+                <LanguageSection
+                    language="Javascript"
+                    description=""
+                />
+            </li>
         </ul>
     )
 }
