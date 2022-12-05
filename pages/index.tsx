@@ -49,9 +49,9 @@ export const LanguageSection = ({language, description}: LanguageSectionProps) =
                 {language}
             </button>
             {isMenuActive &&
-                <section className="mb-4 bg-slate-800 lg:w-1/2 sm:w-full py-2 px-2">
+                <p className="mb-4 bg-slate-800 lg:w-1/2 sm:w-full py-4 px-4 text-white text-base">
                     {description}
-                </section>
+                </p>
             }
         </li>
     )
@@ -59,7 +59,8 @@ export const LanguageSection = ({language, description}: LanguageSectionProps) =
 
 export const KnownLanguages = () => {
     return (
-        <ul className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-green-600 text-xl mt-8">
+        <ul className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-green-600 text-xl py-16">
+            <span className="text-4xl text-green-800 underline">Languages</span>
             <LanguageSection
                 language="Java"
                 description={`
@@ -97,6 +98,18 @@ export const KnownLanguages = () => {
                     and it's the one that I see myself continuing to use for many years in the future.
                 `}
             />
+            <LanguageSection
+                language="TypeScript"
+                description={`
+                    My journey with TypeScript actually started as an accident, I had heard of it, but never
+                    really planned on using it. Until I started using NextJs, when creating a project, it would
+                    ask you if you want to use TypeScript, I hit Yes instead of No, and now my project was in TypeScript
+                    I knew it was mostly the same as Javascript so I just kept going with it but then I started getting compiler
+                    errors. Nothing I couldn't fix with a couple of visits to the docs. TypeScript soon became on of my favorite
+                    languages as it gives you the same degree of freedom as Javascript does while at the same time adding
+                    some needed rigidity to the code for readability.
+                `}
+            />
         </ul>
     )
 }
@@ -118,19 +131,12 @@ export const Project = ({details, images, url}: ProjectProps) => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <section className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center">
+        <li className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center">
             <button 
-                className={
-                    menuOpen ?
-                        "bg-green-600 py-2 lg:w-1/2 md:w-1/2 sm:w-full text-3xl hover:bg-green-500 mt-16 mb-0"
-                    :
-                        "bg-green-600 py-2 lg:w-1/2 md:w-1/2 sm:w-full text-3xl hover:bg-green-500 mt-16 mb-16"
-                }
+                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 transition hover:scale-105 text-green-600 text-2xl"
                 onClick={() => setMenuOpen(!menuOpen)}
             >
                 {details.name}
-                <br />
-                ⌄
             </button>
             {menuOpen &&
                 <section className="lg:w-1/2 md:w-1/2 sm:w-full text-white bg-slate-800 px-4 py-4 mb-16">
@@ -154,16 +160,14 @@ export const Project = ({details, images, url}: ProjectProps) => {
                     </ul>
                 </section>
             }
-        </section>
+        </li>
     )
 }
 
-const Index = () => {
+const ProjectArea = () => {
     return (
-        <main className="bg-slate-900">
-            <Ribbon />
-            <Intro />
-            <KnownLanguages />
+        <ul className="py-16">
+            <span className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-4xl text-green-800 underline">Projects</span>
             <Project 
                 details= {
                     {
@@ -188,6 +192,17 @@ const Index = () => {
                 ]} 
                 url="https://github.com/seiyadragon/Lords-of-the-Sword"
             />
+        </ul>
+    )
+}
+
+const Index = () => {
+    return (
+        <main className="bg-slate-900">
+            <Ribbon />
+            <Intro />
+            <KnownLanguages />
+            <ProjectArea />
         </main>
     )
 }; export default Index
