@@ -11,7 +11,7 @@ export const LanguageSection = ({language, description}: LanguageSectionProps) =
     return (
         <li className="w-full flex flex-col items-center">
             <button 
-                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 transition hover:scale-105 shadow-lg"
+                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full w-full text-center py-2 transition hover:scale-105 shadow-lg"
                 onClick={() => setMenuActive(!isMenuActive)}
             >
                 {language}

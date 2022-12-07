@@ -21,7 +21,7 @@ export const Project = ({details, images, url}: ProjectProps) => {
     return (
         <li className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center">
             <button 
-                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full text-center py-2 transition hover:scale-105 text-green-500 text-2xl shadow-xl"
+                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full w-full text-center py-2 transition hover:scale-105 text-green-500 text-2xl shadow-xl"
                 onClick={() => setMenuOpen(!menuOpen)}
             >
                 {details.name}
