@@ -18,7 +18,7 @@ export const Ribbon = () => {
 export const Intro = () => {
     return (
         <section className="shadow-lg py-8">
-            <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 py-6 pt-16 text-xl">
+            <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 py-6 lg:pt-16 pt-6 text-xl">
                 {`Hello, my name is Arlen Molina. I'm originally from Cuba but I grew up in Texas.
                 I am a programmer with several years of experience
                 learning on my own, while studying. I started to program in 2015, I loved playing
