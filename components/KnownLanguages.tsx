@@ -11,13 +11,13 @@ export const LanguageSection = ({language, description}: LanguageSectionProps) =
     return (
         <li className="w-full flex flex-col items-center">
             <button 
-                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full w-full text-center py-2 transition hover:scale-105 shadow-lg"
+                className="mt-4 bg-slate-800 lg:w-1/2 w-full text-center py-2 transition hover:scale-105 shadow-lg"
                 onClick={() => setMenuActive(!isMenuActive)}
             >
                 {language}
             </button>
             {isMenuActive &&
-                <p className="bg-slate-800 lg:w-1/2 sm:w-full py-4 px-4 text-white text-lg shadow-lg">
+                <p className="bg-slate-800 lg:w-1/2 w-full py-4 px-4 text-white text-lg shadow-lg">
                     {description}
                 </p>
             }
@@ -27,7 +27,7 @@ export const LanguageSection = ({language, description}: LanguageSectionProps) =
 
 const KnownLanguages = () => {
     return (
-        <ul className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-green-500 text-xl py-8">
+        <ul className="lg:mx-48 md:mx-24 mx-12 flex flex-col items-center text-green-500 text-xl py-8">
             <span className="text-4xl text-green-500 underline bg-slate-800 w-full text-center py-8 rounded-xl shadow-xl">Languages</span>
             <LanguageSection
                 language="Java"

@@ -19,15 +19,15 @@ export const Project = ({details, images, url}: ProjectProps) => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <li className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center">
+        <li className="lg:mx-48 md:mx-24 mx-12 flex flex-col items-center">
             <button 
-                className="mt-4 bg-slate-800 lg:w-1/2 sm:w-full w-full text-center py-2 transition hover:scale-105 text-green-500 text-2xl shadow-xl"
+                className="mt-4 bg-slate-800 lg:w-1/2 w-full text-center py-2 transition hover:scale-105 text-green-500 text-2xl shadow-xl"
                 onClick={() => setMenuOpen(!menuOpen)}
             >
                 {details.name}
             </button>
             {menuOpen &&
-                <section className="lg:w-1/2 md:w-full sm:w-full text-white bg-slate-800 px-4 py-4 shadow-xl">
+                <section className="lg:w-1/2 w-full text-white bg-slate-800 px-4 py-4 shadow-xl">
                     <p className="mb-0.5 text-lg">{details.name}</p>
                     <p className="mb-0.5 text-lg">{details.languages}</p>
                     <p className="mb-0.5 text-lg">{details.description}</p>
@@ -52,7 +52,7 @@ const ProjectArea = () => {
     return (
         <ul className="py-8">
             <span 
-                className="lg:mx-48 md:mx-24 sm:mx-12 flex flex-col items-center text-4xl text-green-500 underline bg-slate-800 py-8 rounded-xl shadow-xl"
+                className="lg:mx-48 md:mx-24 mx-12 flex flex-col items-center text-4xl text-green-500 underline bg-slate-800 py-8 rounded-xl shadow-xl"
             >
                 Projects
             </span>
