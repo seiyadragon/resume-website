@@ -74,9 +74,9 @@ const ProjectArea = () => {
                 } 
                 images={[
                     "/lotsw/title_screen.png",
-                    "/lotsw/main_game.png",
-                    "/lotsw/city_menu.png",
-                    "/lotsw/farm_menu.png"
+                    "/lotsw/main_game.PNG",
+                    "/lotsw/city_menu.PNG",
+                    "/lotsw/farm_menu.PNG"
                 ]} 
                 url="https://github.com/seiyadragon/Lords-of-the-Sword"
             />

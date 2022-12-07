@@ -17,7 +17,7 @@ export const Ribbon = () => {
 
 export const Intro = () => {
     return (
-        <section className="shadow-lg py-8">
+        <section className="shadow-lg lg:py-4 pb-4">
             <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 py-6 lg:pt-16 pt-6 text-xl">
                 {`Hello, my name is Arlen Molina. I'm originally from Cuba but I grew up in Texas.
                 I am a programmer with several years of experience
@@ -33,7 +33,7 @@ export const Intro = () => {
                 and I realized it was difficult to work like that, so I decided to look into React and I fell in love. Currently, I use NextJs,
                 with TailWindCSS for all sites including this one, but I am able to use React with any stack as I can learn new frameworks easily.`}
             </p>
-            <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 pt-4 text-xl">
+            <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 text-xl">
                 {`Feel free to contact me regarding any subject! I'm always interested in hearing from potential
                 work and or business opportunities!`}
             </p>
