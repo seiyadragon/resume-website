@@ -27,7 +27,7 @@ export const Project = ({details, images, url}: ProjectProps) => {
                 {details.name}
             </button>
             {menuOpen &&
-                <section className="lg:w-1/2 md:w-full sm:w-full text-white bg-slate-800 px-4 py-4 shadow-lg">
+                <section className="lg:w-1/2 md:w-full sm:w-full text-white bg-slate-800 px-4 py-4 shadow-xl">
                     <p className="mb-0.5 text-lg">{details.name}</p>
                     <p className="mb-0.5 text-lg">{details.languages}</p>
                     <p className="mb-0.5 text-lg">{details.description}</p>
@@ -37,7 +37,7 @@ export const Project = ({details, images, url}: ProjectProps) => {
                         {images.map((image) => {
                             return (
                                 <li key={image} className="px-4 py-4">
-                                    <Image className="border-4 border-slate-700" src={image} alt="Cant Load Image." width={1920} height={1080} />
+                                    <Image className="border-8 border-slate-600 shadow-lg" src={image} alt="Cant Load Image." width={1920} height={1080} />
                                 </li>
                             )
                         })}

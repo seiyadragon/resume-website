@@ -19,7 +19,7 @@ export const Intro = () => {
     return (
         <section className="shadow-lg py-8">
             <p className="text-gray-200 lg:mx-48 md:mx-24 sm:mx-12 py-6 pt-16 text-xl">
-                Hello, my name is Arlen Molina. I'm originally from Cuba but I grew up in Texas.
+                {`Hello, my name is Arlen Molina. I'm originally from Cuba but I grew up in Texas.
                 I am a programmer with several years of experience
                 learning on my own, while studying. I started to program in 2015, I loved playing
                 Minecraft and wanted to make my own games, so I bought a 500-page Java book and got to work,
@@ -31,33 +31,48 @@ export const Intro = () => {
                 to run in your browser, it can also be integrated into both mobile and desktop apps with the use of Electron. But I never
                 liked much the traditional way of web-development, it was hard to wrap my head around separating the HTML from the JavaScript,
                 and I realized it was difficult to work like that, so I decided to look into React and I fell in love. Currently, I use NextJs,
-                for all sites including this one, but I am able to use React with any stack as I can learn new frameworks easily.
+                with TailWindCSS for all sites including this one, but I am able to use React with any stack as I can learn new frameworks easily.`}
             </p>
             <p className="text-gray-200 lg:mx-48 md:mx-24 sm:mx-12 pt-4 text-xl">
-                Feel free to contact me regarding any subject! I'm always interested in hearing from potential
-                work and or business opportunities!
+                {`Feel free to contact me regarding any subject! I'm always interested in hearing from potential
+                work and or business opportunities!`}
             </p>
-            <Link
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=arlenmolina101@gmail.com"
-                className="text-gray-200 lg:mx-48 md:mx-24 sm:mx-12 text-xl underline"
-            >
-                <p className="lg:mx-48 md:mx-24 sm:mx-12">arlenmolina101@gmail.com</p>
-            </Link>
-            <br/>
-            <Link 
-                href="https://www.linkedin.com/in/arlen-molina-423159183"
-                className="text-gray-200 lg:mx-48 md:mx-24 sm:mx-12 text-xl underline"
-            >
-                <p className="lg:mx-48 md:mx-24 sm:mx-12">LinkedIn profile!</p>
-            </Link>
-            <br/>
-            <Link
-                href="https://github.com/seiyadragon"
-                className="text-gray-200 lg:mx-48 md:mx-24 sm:mx-12 text-xl underline"
-            >
-                <p className="lg:mx-48 md:mx-24 sm:mx-12">GitHub profile!</p>
-            </Link>
+            <p className="lg:mx-48 md:mx-24 sm:mx-12 bg-slate-800 w-80 py-2 my-4 text-center transition hover:scale-105 shadow-lg mt-8">
+                <Link
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=arlenmolina101@gmail.com"
+                    className="text-green-400 text-xl"
+                >
+                    {"arlenmolina101@gmail.com"}
+                </Link>
+            </p>
+            <p className="lg:mx-48 md:mx-24 sm:mx-12 bg-slate-800 w-80 py-2 my-4 text-center transition hover:scale-105 shadow-lg">
+                <Link 
+                    href="https://www.linkedin.com/in/arlen-molina-423159183"
+                    className="text-green-400 text-xl"
+                >
+                    {"LinkedIn profile!"}
+                </Link>
+            </p>
+            <p className="lg:mx-48 md:mx-24 sm:mx-12 bg-slate-800 w-80 py-2 my-4 text-center transition hover:scale-105 shadow-lg">
+                <Link
+                    href="https://github.com/seiyadragon"
+                    className="text-green-400 text-xl"
+                >
+                    {"GitHub profile!"}
+                </Link>
+            </p>
         </section>
+    )
+}
+
+export const FrontEnd = () => {
+    return (
+        <p className="lg:mx-48 md:mx-24 sm:mx-12 text-xl py-8 text-gray-300">
+            {`My current passion is front end development. I'm very profficient with NextJS, React,
+            TailwindCSS, and BulmaCSS. I'm also looking to learn more about backend programming, which
+            is something that I've only dipped my toes into. My goal is to become a full stack developer
+            in order to ship full stack web, mobile and desktop applications.`}
+        </p>
     )
 }
 
@@ -98,6 +113,9 @@ const Index = () => {
             </section>
             <section className="shadow-lg">
                 <ProjectArea />
+            </section>
+            <section className="shadow-lg">
+                <FrontEnd />
             </section>
         </main>
     )
