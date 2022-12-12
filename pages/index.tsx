@@ -4,13 +4,32 @@ import Link from 'next/link'
 import KnownLanguages from "../components/KnownLanguages"
 import ProjectArea from "../components/Projects"
 
-export const Ribbon = () => {
+export async function getStaticProps() {
+    try {
+        var text = await (await fetch("http://127.0.0.1:8000/quotes/random")).json()
+        var quote: Quote = {
+            author: text.Author,
+            quote: text.Quote,
+            id: text.id
+        }
+    } catch {
+        var quote: Quote = {author: "null", quote: "null", id: 0}
+    }
+
+    return {
+        props: {
+            quoteText: quote
+        }
+    }
+}
+
+export const Ribbon = ({quoteText}: IndexProps) => {
     return (
-        <section className="bg-green-500 text-4xl text-center font-bold py-2 border-b-2 border-green-400 sticky top-0 z-50"
+        <section className="bg-green-500 text-2xl text-center font-bold py-2 border-b-2 border-green-400 sticky top-0 z-50"
         style={{ 
             "textShadow": "-1px -1px 0 rgb(134 239 172), 1px -1px 0 rgb(134 239 172), -1px 1px 0 rgb(134 239 172), 1px 1px 0 rgb(134 239 172)" 
         }}>
-            <span>Welcome to my website!</span>
+            <span>{quoteToString(quoteText)}</span>
         </section>
     )
 }
@@ -112,10 +131,27 @@ export const Quote = () => {
     )
 }
 
-const Index = () => {
+type Quote = {
+    author: String,
+    quote: String,
+    id: number
+}
+
+export function quoteToString(quote: Quote) {
+    if (quote == null || quote.quote === "null") 
+        return "Welcome to my website!"
+
+    return quote.quote + " -" + quote.author
+}
+
+type IndexProps = {
+    quoteText: Quote
+}
+
+const Index = ({quoteText}: IndexProps) => {
     return (
         <main className="bg-gray-900">
-            <Ribbon />
+            <Ribbon quoteText={quoteText}/>
             <Quote />
             <Intro />
             <section className="shadow-lg">
