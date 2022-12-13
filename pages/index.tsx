@@ -6,7 +6,7 @@ import ProjectArea from "../components/Projects"
 
 export async function getStaticProps() {
     try {
-        var text = await (await fetch("http://127.0.0.1:8000/quotes/random")).json()
+        var text = await (await fetch("http://127.0.0.1:8000/quotes/hourly")).json()
         var quote: Quote = {
             author: text.Author,
             quote: text.Quote,
@@ -87,11 +87,14 @@ export const Intro = () => {
 export const FrontEnd = () => {
     return (
         <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-8 text-gray-300">
-            {`My current passion is front end development. I'm very profficient with NextJS, React,
-            TailwindCSS, and BulmaCSS. I'm also looking to learn more about backend programming, which
-            is something that I've only dipped my toes into. My goal is to become a full stack developer
-            in order to ship full stack web, mobile and desktop applications. I'm currently hoping to start
-            my career, be it through an internship or fulltime job, as my classes allow for it.`}
+            {`
+                My current passion is web development, both front and back-end. I can make,
+                full web apps, integrated with any back-end or custom-made backends. For the
+                front-end I typically use NextJS, TailwindCSS, and TypeScript. For the back-end,
+                I normally use NextJS and TypeScript, but Im also able to use Node and Express, however
+                for standalone api's eg... not attached to a front-end I prefer to use Rust and Rocket due
+                to the more structured language as well as speed and reliability.
+            `}
         </p>
     )
 }

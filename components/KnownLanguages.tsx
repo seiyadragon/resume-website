@@ -103,6 +103,19 @@ const KnownLanguages = () => {
                     some needed rigidity to the code for readability.
                 `}
             />
+            <LanguageSection
+                language="Rust"
+                description={`
+                    Rust is a language that I love and hate. The first time I tried Rust was as an alternative to C++ to make a game engine.
+                    I loved the package manager and all the features that the language contained but back then I did not like any syntax that wasn't
+                    basically Java, C++ or C#. And soon I started battling with the compiler and realized I couln't do whatever I wanted like in C++ and,
+                    I quickly abandoned Rust, however not before trying the Rocket api and making my very first web server. It wouldn't be until years later
+                    when I began to develop an interest in websites, that I would revisit Rust. Specifially the Rocket api, now armed with an understanding
+                    of what I was actually doing I created the simple quotes web api that's used in this website. I still fight with the compiler, but
+                    more and more I'm falling in love with Rust. It's got a very elegant syntax very similar to TypeScript and it gives you absolute control
+                    over memory and performance without sacrificing safety.
+                `}
+            />
         </ul>
     )
 }; export default KnownLanguages

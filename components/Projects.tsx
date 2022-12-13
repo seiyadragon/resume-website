@@ -201,6 +201,28 @@ const ProjectArea = () => {
                 ]} 
                 url="https://github.com/seiyadragon/hempyre"
             />
+            <Project 
+                details= {
+                    {
+                        name: "RustyQuotes",
+                        languages: "Rust, Rocket, Supabase, Reqwest",
+                        description: `
+                            RustyQuotes was my first web api. While I knew what api's were and could make them with
+                            NextJs and Express, I never really needed to. However I wanted to start learning backend
+                            because my goal is to be a fullstack developer. So I developed a simple api that retrieves
+                            famous quotes from my database, you're able to retrive all of them, by id, by author, by quote,
+                            random, daily quote, and hourly quote.
+                        `,
+                        year:"2022"
+                    }
+                } 
+                images={[
+                    "/rustyQuotes/rustyQuotes_code.png",
+                    "/rustyQuotes/rustyQuotes_all.png",
+                    "/rustyQuotes/rustyQuotes_daily.png"
+                ]} 
+                url="https://github.com/seiyadragon/rustyquotes"
+            />
         </ul>
     )
 }; export default ProjectArea
