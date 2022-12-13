@@ -217,9 +217,9 @@ const ProjectArea = () => {
                     }
                 } 
                 images={[
-                    "/rustyQuotes/rustyQuotes_code.png",
-                    "/rustyQuotes/rustyQuotes_all.png",
-                    "/rustyQuotes/rustyQuotes_daily.png"
+                    "/rustyQuotes/rustyquotes_code.png",
+                    "/rustyQuotes/rustyquotes_all.png",
+                    "/rustyQuotes/rustyquotes_daily.png"
                 ]} 
                 url="https://github.com/seiyadragon/rustyquotes"
             />

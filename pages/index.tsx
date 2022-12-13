@@ -6,12 +6,14 @@ import ProjectArea from "../components/Projects"
 
 export async function getStaticProps() {
     try {
-        var text = await (await fetch("http://127.0.0.1:8000/quotes/hourly")).json()
+        var text = await (await fetch("https://8000-cs-c4485005-aa69-4815-acd5-c1bb82c7c641.cs-us-central1-pits.cloudshell.dev/quotes/hourly?authuser=0")).json()
         var quote: Quote = {
             author: text.Author,
             quote: text.Quote,
             id: text.id
         }
+
+        console.log(text)
     } catch {
         var quote: Quote = {author: "null", quote: "null", id: 0}
     }
