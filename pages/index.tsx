@@ -15,7 +15,11 @@ export async function getStaticProps() {
 
         console.log(text)
     } catch {
-        var quote: Quote = {author: "null", quote: "null", id: 0}
+        var quote: Quote = {author: "Emory Andrew Tate II", quote: `
+            My unmatched perspicacity coupled with
+            my sheer indefatigability makes me a feared
+            opponent in any realm of human endeavour.
+        `, id: 0}
     }
 
     return {
@@ -143,9 +147,6 @@ type Quote = {
 }
 
 export function quoteToString(quote: Quote) {
-    if (quote == null || quote.quote === "null") 
-        return "Welcome to my website!"
-
     return quote.quote + " -" + quote.author
 }
 
