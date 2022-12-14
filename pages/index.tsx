@@ -98,9 +98,10 @@ export const FrontEnd = () => {
                 My current passion is web development, both front and back-end. I can make,
                 full web apps, integrated with any back-end or custom-made backends. For the
                 front-end I typically use NextJS, TailwindCSS, and TypeScript. For the back-end,
-                I normally use NextJS and TypeScript, but Im also able to use Node and Express, however
-                for standalone api's eg... not attached to a front-end I prefer to use Rust and Rocket due
-                to the more structured language as well as speed and reliability.
+                I normally use NextJS and TypeScript, I am also able to make servers and websites in Rust,
+                making use of several libraries they have available, such as Rocket for backend, as well as
+                Yew for front end. However Rust is still not widely used in this way, so for most of my apis
+                it's either Nextjs or Express.
             `}
         </p>
     )
