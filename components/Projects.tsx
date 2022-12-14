@@ -211,7 +211,8 @@ const ProjectArea = () => {
                             NextJs and Express, I never really needed to. However I wanted to start learning backend
                             because my goal is to be a fullstack developer. So I developed a simple api that retrieves
                             famous quotes from my database, you're able to retrive all of them, by id, by author, by quote,
-                            random, daily quote, and hourly quote.
+                            random, daily quote, and hourly quote. However the version used here, is just the hourly quote,
+                            rewritten in TypeScript and NextJS, as it's not necessary to host the entire api.
                         `,
                         year:"2022"
                     }

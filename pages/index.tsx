@@ -6,7 +6,7 @@ import ProjectArea from "../components/Projects"
 
 export async function getStaticProps() {
     try {
-        var text = await (await fetch("https://8000-cs-c4485005-aa69-4815-acd5-c1bb82c7c641.cs-us-central1-pits.cloudshell.dev/quotes/hourly")).json()
+        var text = await (await fetch("https://seiyadragon.vercel.app/api/quote")).json()
         var quote: Quote = {
             author: text.Author,
             quote: text.Quote,
