@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import KnownLanguages from "../components/KnownLanguages"
 import ProjectArea from "../components/Projects"
+import { GetServerSideProps } from "next"
 
-export async function getStaticProps() {
+export const getServerSideProps: GetServerSideProps = async (context) => {
     try {
         var text = await (await fetch("https://seiyadragon.vercel.app/api/quote")).json()
         var quote: Quote = {
