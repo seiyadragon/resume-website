@@ -93,12 +93,9 @@ export const FrontEnd = () => {
         <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-8 text-gray-300">
             {`
                 My current passion is web development, both front and back-end. I can make,
-                full web apps, integrated with any back-end or custom-made backends. For the
-                front-end I typically use NextJS, TailwindCSS, and TypeScript. For the back-end,
-                I normally use NextJS and TypeScript, I am also able to make servers and websites in Rust,
-                making use of several libraries they have available, such as Rocket for backend, as well as
-                Yew for front end. However Rust is still not widely used in this way, so for most of my apis
-                it's either Nextjs or Express.
+                full web apps, integrated with any back-end or custom-made backends. I can also
+                bring these web apps to mobile or desktop with the use of ReactNative and Electron.
+                I am excited to start working and contributing my skills to projects.
             `}
         </p>
     )
@@ -107,7 +104,7 @@ export const FrontEnd = () => {
 export const Education = () => {
     return (
         <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-8 text-gray-300">
-            {`I'm on my last year of college. I attend online classes at Colorado Technical University
+            {`I'm on my last year of college for a Bachelor's in Computer Science. I attend online classes at Colorado Technical University
             and I'm expected to graduate in December, 2023.`}
         </p>
     )
