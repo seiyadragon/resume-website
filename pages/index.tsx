@@ -4,6 +4,7 @@ import Link from 'next/link'
 import KnownLanguages from "../components/KnownLanguages"
 import ProjectArea from "../components/Projects"
 import { GetServerSideProps } from "next"
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     try {
@@ -32,9 +33,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
 export const Ribbon = ({quoteText}: IndexProps) => {
     return (
-        <section className="bg-green-500 text-2xl text-center font-bold py-2 border-b-2 border-green-400 sticky top-0 z-50"
+        <section className="backdrop-blur-lg text-2xl text-center font-bold py-2 border-b-2 border-blue-400 sticky top-0 z-50"
         style={{ 
-            "textShadow": "-1px -1px 0 rgb(134 239 172), 1px -1px 0 rgb(134 239 172), -1px 1px 0 rgb(134 239 172), 1px 1px 0 rgb(134 239 172)" 
+            "textShadow": "-1px -1px 0 rgb(96 165 250), 1px -1px 0 rgb(96 165 250), -1px 1px 0 rgb(96 165 250), 1px 1px 0 rgb(96 165 250)" 
         }}>
             <span>{quoteToString(quoteText)}</span>
         </section>
@@ -63,30 +64,26 @@ export const Intro = () => {
                 {`Feel free to contact me regarding any subject! I'm always interested in hearing from potential
                 work and or business opportunities!`}
             </p>
-            <p className="lg:mx-48 md:mx-24 mx-12 bg-slate-800 lg:w-80 md:w-80 py-2 my-4 text-center transition hover:scale-105 shadow-lg mt-8">
+            <section className="flex flex-wrap lg:mx-48 md:mx-24 mx-12 gap-8 py-4">
                 <Link
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=arlenmolina101@gmail.com"
-                    className="text-green-400 text-xl"
+                    className="text-blue-400 text-4xl transition hover:scale-150"
                 >
-                    {"arlenmolina101@gmail.com"}
+                    <FaEnvelope />
                 </Link>
-            </p>
-            <p className="lg:mx-48 md:mx-24 mx-12 bg-slate-800 lg:w-80 md:w-80 py-2 my-4 text-center transition hover:scale-105 shadow-lg">
                 <Link 
                     href="https://www.linkedin.com/in/arlen-molina-423159183"
-                    className="text-green-400 text-xl"
+                    className="text-blue-400 text-4xl transition hover:scale-150"
                 >
-                    {"LinkedIn profile!"}
+                    <FaLinkedin />
                 </Link>
-            </p>
-            <p className="lg:mx-48 md:mx-24 mx-12 bg-slate-800 lg:w-80 md:w-80 py-2 my-4 text-center transition hover:scale-105 shadow-lg">
                 <Link
                     href="https://github.com/seiyadragon"
-                    className="text-green-400 text-xl"
+                    className="text-blue-400 text-4xl transition hover:scale-150"
                 >
-                    {"GitHub profile!"}
+                    <FaGithub />
                 </Link>
-            </p>
+            </section>
         </section>
     )
 }
@@ -162,17 +159,17 @@ const Index = ({quoteText}: IndexProps) => {
             <Ribbon quoteText={quoteText}/>
             <Quote />
             <Intro />
-            <section className="shadow-lg">
+            <FrontEnd />
+            <Education />
+            <section className="lg:mx-48 md:mx-24 mx-12 flex flex-wrap">
                 <KnownLanguages />
-            </section>
-            <section className="shadow-lg">
                 <ProjectArea />
             </section>
             <section className="shadow-lg">
-                <FrontEnd />
+                
             </section>
             <section className="shadow-lg">
-                <Education />
+                
             </section>
         </main>
     )
