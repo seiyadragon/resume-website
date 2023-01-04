@@ -4,7 +4,7 @@ import Link from 'next/link'
 import KnownLanguages from "../components/KnownLanguages"
 import ProjectArea from "../components/Projects"
 import { GetServerSideProps } from "next"
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     try {
@@ -44,7 +44,7 @@ export const Ribbon = ({quoteText}: IndexProps) => {
 
 export const Intro = () => {
     return (
-        <section className="shadow-lg lg:py-4 pb-4">
+        <section className="lg:py-4 pb-4">
             <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 py-6 lg:pt-16 pt-6 text-xl">
                 {`Hello, my name is Arlen Molina. I'm originally from Cuba but I grew up in Texas.
                 I am a programmer with several years of experience
@@ -60,7 +60,17 @@ export const Intro = () => {
                 and I realized it was difficult to work like that, so I decided to look into React and I fell in love. Currently, I use NextJs,
                 with TailWindCSS for all sites including this one, but I am able to use React with any stack as I can learn new frameworks easily.`}
             </p>
-            <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 text-xl">
+            <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-6 text-gray-300">
+                {`I'm on my last year of college for a Bachelor's in Computer Science. I attend online classes at Colorado Technical University
+                and I'm expected to graduate in December, 2023.`}
+            </p>
+            <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-6 text-gray-300">
+                {`My current passion is web development, both front and back-end. I can make,
+                full web apps, integrated with any back-end or custom-made backends. I can also
+                bring these web apps to mobile or desktop with the use of ReactNative and Electron.
+                I am excited to start working and contributing my skills to projects.`}
+            </p>
+            <p className="text-gray-200 lg:mx-48 md:mx-24 mx-12 text-xl py-6">
                 {`Feel free to contact me regarding any subject! I'm always interested in hearing from potential
                 work and or business opportunities!`}
             </p>
@@ -83,30 +93,14 @@ export const Intro = () => {
                 >
                     <FaGithub />
                 </Link>
+                <Link
+                    href="https://twitter.com/arlenmolina101"
+                    className="text-blue-400 text-4xl transition hover:scale-150"
+                >
+                    <FaTwitter />
+                </Link>
             </section>
         </section>
-    )
-}
-
-export const FrontEnd = () => {
-    return (
-        <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-8 text-gray-300">
-            {`
-                My current passion is web development, both front and back-end. I can make,
-                full web apps, integrated with any back-end or custom-made backends. I can also
-                bring these web apps to mobile or desktop with the use of ReactNative and Electron.
-                I am excited to start working and contributing my skills to projects.
-            `}
-        </p>
-    )
-}
-
-export const Education = () => {
-    return (
-        <p className="lg:mx-48 md:mx-24 mx-12 text-xl py-8 text-gray-300">
-            {`I'm on my last year of college for a Bachelor's in Computer Science. I attend online classes at Colorado Technical University
-            and I'm expected to graduate in December, 2023.`}
-        </p>
     )
 }
 
@@ -154,19 +148,39 @@ const Index = ({quoteText}: IndexProps) => {
     return (
         <main className="bg-gray-900">
             <Ribbon quoteText={quoteText}/>
-            <Quote />
-            <Intro />
-            <FrontEnd />
-            <Education />
-            <section className="lg:mx-48 md:mx-24 mx-12 flex flex-wrap">
-                <KnownLanguages />
-                <ProjectArea />
-            </section>
             <section className="shadow-lg">
-                
+                <Quote />
             </section>
-            <section className="shadow-lg">
-                
+            <section
+                style={{
+                    "backgroundImage": "url(/earth.jpg)",
+                    "backgroundSize": "cover"
+                }}
+            >
+                <section className="backdrop-blur-md"
+                    style={{
+                        "backgroundColor": "rgb(15, 23, 42, 0.5)"
+                    }}
+                >
+                    <Intro />
+                </section>
+            </section>
+            <section
+                style={{
+                    "backgroundImage": "url(/twitter_background_2.png)",
+                    "backgroundSize": "tile"
+                }}
+            >
+                <section className="backdrop-blur-md"
+                    style={{
+                        "backgroundColor": "rgb(15, 23, 42, 0.5)"
+                    }}
+                >
+                    <section className="lg:mx-48 md:mx-24 mx-12 flex flex-wrap">
+                        <KnownLanguages />
+                        <ProjectArea />
+                    </section>
+                </section>
             </section>
         </main>
     )
