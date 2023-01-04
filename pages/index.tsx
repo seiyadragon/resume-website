@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import KnownLanguages from "../components/KnownLanguages"
 import ProjectArea from "../components/Projects"
-import { GetServerSideProps } from "next"
+import { GetStaticProps } from "next"
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getStaticProps = async () => {
     try {
         var text = await (await fetch("https://seiyadragon.vercel.app/api/quote")).json()
         var quote: Quote = {
