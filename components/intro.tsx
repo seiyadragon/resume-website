@@ -39,7 +39,8 @@ const Intro = () => {
                                 and programming frameworks and apis that I use, but I know most people don't care about that. They want a website that
                                 looks good, and gets results. That's why in the last year I've been focusing a lot more on design as well as
                                 Search Engine Optimization(SEO). I might not have the most experience around, but I can guarantee that I will not
-                                stop working on your project, till you're 100% satisfied with it.
+                                stop working on your project, until you're 100% satisfied with it. Because
+                                not doing so would be insulting to those who chose to trust me with such a huge part of their busines.
                             `
                         }
                     </p>
@@ -55,7 +56,9 @@ const Intro = () => {
                                 because I wanted to make a program that would go through a list of Stock symbols, do some calculations on it and display
                                 everything in an Excel sheet. At first
                                 I used python and everything was great, but the framework I was using was not very accurate and was prone to break. I found
-                                what seemed to be a better framework on Go, which I had never used till that point, and I made the same program again in Go.
+                                what seemed to be a better framework for Go, which I had never used till that point, then I made the same program again in Go,
+                                learning the language along the way. It actually became one of my favorite languages, the code always looked very nice and clean,
+                                due to their enforcement of clean code. I've also made shaders in blender and Godot Engine.
                             `
                         }
                     </p>
