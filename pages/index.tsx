@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import Intro from "../components/intro"
 import Ribbon from "../components/ribbon"
 import Head from "next/head"
+import Announcement from "../components/announcement"
 
 export const getServerSideProps = async () => {
     try {
@@ -84,6 +85,9 @@ const Index = ({quoteText}: IndexProps) => {
             <Ribbon />
             <section className="shadow-lg">
                 <Hero isWide={isWide} innerWidth={innerWidth}/>
+            </section>
+            <section>
+                <Announcement />
             </section>
             <section
                 style={{
