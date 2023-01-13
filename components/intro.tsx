@@ -11,18 +11,14 @@ const Intro = () => {
                     <p className="text-base">
                         {
                             `
-                                My name is Arlen Molina, I'm 21 years old, and live in Texas.
-                                I'm originally from Cuba but move to The United States when I was around 10.
-                                I've always loved to figure out how things worked, and since I can remember I've
-                                known how to use computers as well as take them apart and put them back together.
-                                When I was around 14, I started getting interested in programming and what it entailed.
-                                I told my dad about it, and for my birthday he bought me a Java book, which I started to read
-                                and very quickly got to work on projects. I fell in love with programming, and that's the reason
-                                I have spent many hours over the past 7 years working on my own projects, slowly getting better at it.
-                                Now that I'm nearly at the end of my college years, I've become very dedicated to my craft, I specialize
-                                in web and app development. I've worked with several front end and back end apis, but most importantly,
-                                I know how to do research and solve problems on my own, I joke that I spend more time googling stuff than
-                                actually writing code.
+                                I am Arlen Molina, a 21-year-old software developer from Texas with a strong passion for understanding how things work. 
+                                Having immigrated to the United States at a young age, I quickly became fascinated with computers and honed my skills in 
+                                both hardware and software. When I was 14, my interest in programming was sparked and my dad gifted me a Java book, 
+                                leading me to dive into coding and spend countless hours over the past 7 years working on personal projects to improve 
+                                my skills. As I near the end of my college education, I have become deeply dedicated to my craft and specialize 
+                                in web and app development. With experience working with various front-end and back-end APIs, I am able to 
+                                efficiently research and solve problems independently. In fact, I often joke that I spend more time 
+                                googling solutions than actually writing code.
                             `
                         }
                     </p>
@@ -32,15 +28,16 @@ const Intro = () => {
                     <p className="text-base">
                         {
                             `
-                                When I first started to program my main interest was games. And I learned a lot of programming concepts through that.
-                                However I soon realized that games were very big projects that required many different skillsets, I started to redirect
-                                my attention to web development. I had previous experience with HTML CSS and Javascript, but this time I learned React,
-                                since it seemed like the most popular framework at the time and I got to work. I could talk about all the technical,
-                                and programming frameworks and apis that I use, but I know most people don't care about that. They want a website that
-                                looks good, and gets results. That's why in the last year I've been focusing a lot more on design as well as
-                                Search Engine Optimization(SEO). I might not have the most experience around, but I can guarantee that I will not
-                                stop working on your project, until you're 100% satisfied with it. Because
-                                not doing so would be insulting to those who chose to trust me with such a huge part of their busines.
+                                My initial interest in programming was centered around game development, where I gained a solid understanding 
+                                of programming concepts. However, as I discovered the complexity and diverse skillset required for game development, 
+                                I redirected my focus towards web development. With prior knowledge of HTML, CSS, and JavaScript, 
+                                I delved into learning React, as it was the most popular framework at the time. While I am well-versed in 
+                                various technical frameworks and APIs, my primary focus is on creating visually appealing websites that 
+                                deliver results. In the past year, I have placed a greater emphasis on design and search engine optimization 
+                                (SEO) to ensure that my clients' websites not only look great but also drive traffic and generate leads. 
+                                I understand that trust is a crucial component of any business relationship, and I take pride in my 
+                                commitment to delivering projects that exceed my clients' expectations. My promise to you is that I 
+                                will not rest until you are completely satisfied with the final product.
                             `
                         }
                     </p>
@@ -50,15 +47,14 @@ const Intro = () => {
                     <p className="text-base">
                         {
                             `
-                                Throughout the years I've been programming, and especially before focusing on web development, I picked up some other skills.
-                                For game development I learned Java, C# and C++. Later on I wanted to make game engines, and I learned GLFW, OpenGL and GLSL.
-                                Programming shaders is one of those things I will always love to do. I'm also familiar with Python and Go, I learned these two
-                                because I wanted to make a program that would go through a list of Stock symbols, do some calculations on it and display
-                                everything in an Excel sheet. At first
-                                I used python and everything was great, but the framework I was using was not very accurate and was prone to break. I found
-                                what seemed to be a better framework for Go, which I had never used till that point, then I made the same program again in Go,
-                                learning the language along the way. It actually became one of my favorite languages, the code always looked very nice and clean,
-                                due to their enforcement of clean code. I've also made shaders in blender and Godot Engine.
+                                Throughout my programming journey, I have acquired a diverse set of skills in addition to web development. 
+                                My background in game development includes expertise in Java, C#, and C++. I also delved into creating 
+                                game engines, using GLFW, OpenGL, and GLSL to program shaders, which is a passion of mine. I am familiar with 
+                                Python and Go, which I learned in order to create a program that would process a list of stock symbols, perform 
+                                calculations, and display the results in an Excel sheet. Initially, I used Python, but found that the framework 
+                                I was using was not accurate and prone to breaking. I then discovered a more suitable framework for Go, which I 
+                                had not previously used, and rewrote the program in Go, learning the language as I went along. I found it to be 
+                                a great language for clean and organized code. I also have experience in creating shaders in Blender and Godot Engine.
                             `
                         }
                     </p>
@@ -67,8 +63,14 @@ const Intro = () => {
             <p className="text-base py-8">
                 {
                     `
-                        Here are all my links. I'm most active on twitter but, feel free to contact me however it's most convenient for you!
-                        Email is arlenmolina101@gmail.com, or click one of the links below to go directly to the site.
+                        If you're in need of a dedicated and skilled web developer, look no further. 
+                        With my extensive background in programming, including game development and proficiency in various 
+                        languages such as Java, C#, C++, Python, Go, and React, I am well-equipped to handle any web 
+                        development project. I have a keen eye for design and a strong understanding of SEO, ensuring 
+                        that your website not only looks great but also drives traffic and generates leads. My commitment 
+                        to delivering projects that exceed expectations, coupled with my ability to efficiently research and 
+                        solve problems, makes me a valuable asset to any team. Contact me today to see how I can help bring your 
+                        web development project to the next level.
                     `
                 }
             </p>
