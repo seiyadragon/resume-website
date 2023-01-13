@@ -76,6 +76,7 @@ const Intro = () => {
             </p>
             <section className="flex justify-center">
                 <section className="flex flex-wrap gap-8 py-4">
+                    <p className="text-blue-600 text-6xl relative -top-5">{'<'}</p>
                     <Link
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=arlenmolina101@gmail.com"
                         className="text-blue-400 text-4xl transition hover:scale-150"
@@ -100,6 +101,7 @@ const Intro = () => {
                     >
                         <FaTwitter />
                     </Link>
+                    <p className="text-blue-600 text-6xl relative -top-5">{'/>'}</p>
                 </section>
             </section>
         </section>
