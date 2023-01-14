@@ -66,32 +66,32 @@ const Intro = () => {
             </p>
             <section className="flex justify-center">
                 <section className="flex gap-8 py-4">
-                    <p className="text-blue-600 text-6xl relative -top-5">{'<'}</p>
+                    <p className="text-blue-600 md:text-6xl text-4xl relative md:-top-5 -top-3">{'<'}</p>
                     <Link
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=arlenmolina101@gmail.com"
-                        className="text-blue-400 text-4xl transition hover:scale-150"
+                        className="text-blue-400 md:text-4xl text-2xl transition hover:scale-150"
                     >
                         <FaEnvelope />
                     </Link>
                     <Link 
                         href="https://www.linkedin.com/in/arlen-molina-423159183"
-                        className="text-blue-400 text-4xl transition hover:scale-150"
+                        className="text-blue-400 md:text-4xl text-2xl transition hover:scale-150"
                     >
                         <FaLinkedin />
                     </Link>
                     <Link
                         href="https://github.com/seiyadragon"
-                        className="text-blue-400 text-4xl transition hover:scale-150"
+                        className="text-blue-400 md:text-4xl text-2xl transition hover:scale-150"
                     >
                         <FaGithub />
                     </Link>
                     <Link
                         href="https://twitter.com/arlenmolina101"
-                        className="text-blue-400 text-4xl transition hover:scale-150"
+                        className="text-blue-400 md:text-4xl text-2xl transition hover:scale-150"
                     >
                         <FaTwitter />
                     </Link>
-                    <p className="text-blue-600 text-6xl relative -top-5">{'/>'}</p>
+                    <p className="text-blue-600 md:text-6xl text-4xl relative md:-top-5 -top-3">{'/>'}</p>
                 </section>
             </section>
         </section>
