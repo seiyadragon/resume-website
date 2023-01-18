@@ -8,6 +8,9 @@ import Intro from "../components/intro"
 import Ribbon from "../components/ribbon"
 import Head from "next/head"
 import Announcement from "../components/announcement"
+import Footer from "../components/footer"
+import Skills from "../components/skills"
+import EmailList from "../components/email_list"
 
 export const getServerSideProps = async () => {
     try {
@@ -27,15 +30,22 @@ export const getServerSideProps = async () => {
         `, id: 0}
     }
 
+    let supabaseUrl = process.env.SB_URL !== undefined ? process.env.SB_URL : ""
+    let supabaseKey = process.env.SB_KEY !== undefined ? process.env.SB_KEY : ""
+
     return {
         props: {
-            quoteText: quote
+            quoteText: quote,
+            supabaseUrl: supabaseUrl,
+            supabaseKey: supabaseKey
         }
     }
 }
 
 export type IndexProps = {
-    quoteText: Quote
+    quoteText: Quote,
+    supabaseUrl: string,
+    supabaseKey: string
 }
 
 export type Quote = {
@@ -44,7 +54,7 @@ export type Quote = {
     id: number
 }
 
-const Index = ({quoteText}: IndexProps) => {
+const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
     const IMAGE_SWITCH_WIDTH = 1200
 
     let [isWide, setWide] = useState(true)
@@ -104,7 +114,16 @@ const Index = ({quoteText}: IndexProps) => {
                         <p className="italic">{quoteText.quote}</p>
                         <p className="italic">- {quoteText.author}</p>
                     </section>
-                    <Intro />
+                    <section className="border-b-2 border-blue-400 pb-16">
+                        <Intro />
+                    </section>
+                    <section className="border-b-2 border-blue-400 pb-8">
+                        <EmailList supabaseUrl={supabaseUrl} supabaseKey={supabaseKey}/>
+                    </section>
+                    <section className="border-b-2 border-blue-400 py-8">
+                        <Skills />
+                    </section>
+                    <Footer />
                 </section>
             </section>
         </main>
