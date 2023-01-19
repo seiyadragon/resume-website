@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Links from "./links";
 
 const Ribbon = () => {
     return (
@@ -15,9 +16,9 @@ const Ribbon = () => {
                     <p className="px-4 text-base">Arlen Molina</p>
                     <p className="px-4 text-xs">Web Developer</p>
                 </section>
-            </section>
-            <section className="flex">
-
+                <section className="ml-auto">
+                    <Links />
+                </section>
             </section>
         </section>
     )

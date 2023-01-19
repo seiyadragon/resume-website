@@ -7,7 +7,7 @@ import TextColumn from "./text_column";
 const Intro = () => {
     return (
         <section className="lg:py-4 pb-4 lg:mx-48 md:mx-24 mx-12 text-white">
-            <section className="flex flex-wrap lg:gap-44 md:gap-44 gap-8">
+            <section className="flex flex-wrap lg:gap-44 md:gap-44 gap-y-8">
                 <TextColumn 
                     title="Background"
                     body={`

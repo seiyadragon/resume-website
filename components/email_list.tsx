@@ -17,10 +17,13 @@ const EmailList = ({supabaseUrl, supabaseKey}: EmailListProps) => {
             <p className="py-8 text-xl">
                 {
                     `
-
-                        If your looking to start making websites, make sure to subscribe to my email newsletter,
-                        I will send you a free guide to get started! You will also receive, tips and guides in topics,
-                        such as programming, web design, artifical intelligence, news on the latest tech trends.
+                        Are you looking to improve your web development and programming skills? 
+                        My email newsletter is the perfect solution for you! By subscribing, 
+                        you will receive free information and tutorials on the latest web development 
+                        trends and techniques. I cover everything from HTML and CSS to JavaScript and 
+                        PHP, so you can stay up-to-date with the latest industry standards. Plus, our 
+                        newsletter is completely free and you can unsubscribe at any time. Don't miss
+                        out on this opportunity to take your skills to the next level. Subscribe now!
                     `
                 }
             </p>
@@ -35,7 +38,7 @@ const EmailList = ({supabaseUrl, supabaseKey}: EmailListProps) => {
             </section>
             <p className={`${errorMessageColor} text-center`}>{errorMessage}</p>
             <section className="text-center">
-                <button className="group transition-all duration-300 ease-in-out text-8xl py-8"
+                <button className="group transition-all duration-300 ease-in-out text-8xl py-8 animate-pulse"
                     onClick={async () => {
                         if (inputValue.includes('@') && inputValue.includes('.com'))
                             var isEmailValid = true
@@ -67,8 +70,8 @@ const EmailList = ({supabaseUrl, supabaseKey}: EmailListProps) => {
                         }
                     }}
                 >
-                    <span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-                        Join!
+                    <span className='bg-left-bottom bg-gradient-to-r text-blue-400 from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+                        Subscribe
                     </span>
                 </button>
             </section>

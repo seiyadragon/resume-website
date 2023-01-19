@@ -8,9 +8,9 @@ import Intro from "../components/intro"
 import Ribbon from "../components/ribbon"
 import Head from "next/head"
 import Announcement from "../components/announcement"
-import Footer from "../components/footer"
 import Skills from "../components/skills"
 import EmailList from "../components/email_list"
+import Pitch from "../components/pitch"
 
 export const getServerSideProps = async () => {
     try {
@@ -88,8 +88,8 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
     return (
         <main className="bg-gray-900">
             <Head>
-                <title>Arlen Molina</title>
-                <link rel="favicon" href="/ben.jpg"/>
+                <title>Arlen Molina - Web Developer - Websites without hassle</title>
+                <link rel="icon" href="favicon.png"/>
                 <meta charSet="UTF-8" />
             </Head>
             <Ribbon />
@@ -102,7 +102,8 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
             <section
                 style={{
                     "backgroundImage": "url(/stranger.jpg)",
-                    "backgroundSize": `${isWide ? "cover" : "contain"}`
+                    "backgroundSize": `${isWide ? "cover" : "contain"}`,
+                    "filter": "hue-rotate(90deg)"
                 }}
             >
                 <section className="backdrop-blur-lg"
@@ -110,9 +111,11 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
                         "backgroundColor": "rgb(15, 23, 42, 0.5)"
                     }}
                 >
-                    <section className="lg:px-48 md:px-24 px-12 text-orange-600 text-5xl py-8">
-                        <p className="italic">{quoteText.quote}</p>
-                        <p className="italic">- {quoteText.author}</p>
+                    <section className="py-8 pt-16">
+                        <section className="lg:mx-48 md:mx-24 mx-12 text-white text-5xl py-4 px-4 border-2 border-blue-400 rounded-lg">
+                            <p className="italic">{quoteText.quote}</p>
+                            <p className="italic">- {quoteText.author}</p>
+                        </section>
                     </section>
                     <section className="border-b-2 border-blue-400 pb-16">
                         <Intro />
@@ -123,7 +126,7 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
                     <section className="border-b-2 border-blue-400 py-8">
                         <Skills />
                     </section>
-                    <Footer />
+                    <Pitch />
                 </section>
             </section>
         </main>

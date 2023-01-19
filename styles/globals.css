@@ -17,3 +17,20 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-blue-300;
 }
+
+.skills-menu {
+  height: 29em;
+  top: 86.1em;
+}
+
+@media (min-width: 768px) {
+  .text-column {
+    width: 25.65%;
+  }
+  .skills-menu {
+    height: 11.45em;
+    top: 43.1em;
+  }
+}
+
+
