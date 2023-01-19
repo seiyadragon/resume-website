@@ -10,7 +10,7 @@ const Hero = ({isWide, innerWidth}: HeroProps) => {
 
     if (isWide)
         return (
-            <section className="" style={{"height": `${innerWidth / 3 - 3}` + "px"}}>
+            <section className="-mt-8" style={{"height": `${innerWidth / 3 - 3}` + "px"}}>
                 <Image
                     className="shadow-inner"
                     src="/ben.jpg" 
@@ -25,7 +25,7 @@ const Hero = ({isWide, innerWidth}: HeroProps) => {
             </section>
         )
     else return (
-        <section className="">
+        <section className="-mt-8">
             <Image
                 className="shadow-inner"
                 src="/ben.jpg" 

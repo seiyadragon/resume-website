@@ -86,7 +86,7 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
         quoteText.author = "Proverb"
 
     return (
-        <main className="bg-gray-900">
+        <main className="bg-zinc-900">
             <Head>
                 <title>Arlen Molina - Web Developer - Websites without hassle</title>
                 <link rel="icon" href="favicon.png"/>
@@ -112,9 +112,11 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
                     }}
                 >
                     <section className="py-8 pt-16">
-                        <section className="lg:mx-48 md:mx-24 mx-12 text-white text-5xl py-4 px-4 border-2 border-blue-400 rounded-lg">
-                            <p className="italic">{quoteText.quote}</p>
-                            <p className="italic">- {quoteText.author}</p>
+                        <section className="lg:mx-48 md:mx-24 mx-12 text-blue-300 text-5xl py-4 px-4 border-2 border-blue-400 rounded-lg backdrop-blur-lg hover:backdrop-blur-3xl">
+                            <section className="hover:opacity-90 opacity-60 transition-opacity">
+                                <p className="italic">{quoteText.quote}</p>
+                                <p className="italic">- {quoteText.author}</p>
+                            </section>
                         </section>
                     </section>
                     <section className="border-b-2 border-blue-400 pb-16">

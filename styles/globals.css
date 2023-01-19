@@ -18,19 +18,9 @@
   @apply bg-blue-300;
 }
 
-.skills-menu {
-  height: 29em;
-  top: 104.57em;
-}
-
 @media (min-width: 768px) {
   .text-column {
     width: 25.65%;
-  }
-  .skills-menu {
-    height: 11.45em;
-    width: 80vw;
-    top: 43.1em;
   }
 }
 
