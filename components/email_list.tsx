@@ -38,7 +38,7 @@ const EmailList = ({supabaseUrl, supabaseKey}: EmailListProps) => {
             </section>
             <p className={`${errorMessageColor} text-center`}>{errorMessage}</p>
             <section className="text-center">
-                <button className="group transition-all duration-300 ease-in-out text-8xl py-8 animate-pulse"
+                <button className="group transition-all duration-300 ease-in-out md:text-8xl text-4xl py-8 animate-pulse"
                     onClick={async () => {
                         if (inputValue.includes('@') && inputValue.includes('.com'))
                             var isEmailValid = true
