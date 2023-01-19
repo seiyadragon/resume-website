@@ -103,7 +103,6 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
                 style={{
                     "backgroundImage": "url(/stranger.jpg)",
                     "backgroundSize": `${isWide ? "cover" : "contain"}`,
-                    "filter": "hue-rotate(90deg)"
                 }}
             >
                 <section className="backdrop-blur-lg"
