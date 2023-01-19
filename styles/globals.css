@@ -20,7 +20,7 @@
 
 .skills-menu {
   height: 29em;
-  top: 86.1em;
+  top: 104.57em;
 }
 
 @media (min-width: 768px) {
@@ -29,6 +29,7 @@
   }
   .skills-menu {
     height: 11.45em;
+    width: 80vw;
     top: 43.1em;
   }
 }
