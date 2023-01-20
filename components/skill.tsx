@@ -24,7 +24,7 @@ const Skill = ({icon, text, menuText, openMenuFunc, initialState}: SkillProps) =
     return (
         <button className="text-blue-400 group transition-all duration-300 ease-in-out"
             onClick={() => {
-                openMenuFunc(!isOpen, menuText)
+                openMenuFunc(!isOpen, menuText, text)
                 setOpen(!isOpen)
             }}
         >
