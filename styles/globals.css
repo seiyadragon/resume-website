@@ -18,10 +18,27 @@
   @apply bg-blue-300;
 }
 
+.skills-section {
+  height: 61rem;
+}
+
 @media (min-width: 768px) {
   .text-column {
     width: 25.65%;
   }
+  .skills-section {
+  height: 61rem;
+  }
 }
 
+@media (min-width: 1248px) {
+  .skills-section {
+    height: 41rem;
+  }
+}
 
+@media (min-width: 1920px) {
+  .skills-section {
+    height: 22rem;
+  }
+}

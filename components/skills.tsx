@@ -14,7 +14,7 @@ const Skills = () => {
     }
 
     return (
-        <section className="lg:px-48 md:px-24 px-12 text-white text-4xl w-full py-8">
+        <section className="skills-section lg:px-48 md:px-24 px-12 text-white text-4xl w-full py-8">
             {!isMenuOpen &&
                 <section className="flex flex-wrap" style={{'columnGap': '12.55em', 'rowGap': '1em'}}>
                     <section className="flex flex-col gap-y-10">
@@ -98,7 +98,7 @@ const Skills = () => {
                 </section>
             }
             {isMenuOpen &&
-                <section className="">
+                <section className="h-full">
                     <Skill
                         icon={<FaArrowLeft />}
                         text=""
