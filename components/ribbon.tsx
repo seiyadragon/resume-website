@@ -16,9 +16,11 @@ const Ribbon = () => {
                     <p className="px-4 text-base">Arlen Molina</p>
                     <p className="px-4 text-xs">Web Developer</p>
                 </section>
+                <section className="grow flex justify-end">
+                    <Links />
+                </section>
             </section>
             <section className="lg:mx-48 md:mx-24 mx-12">
-                <Links />
             </section>
         </section>
     )

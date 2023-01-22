@@ -121,13 +121,15 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
                     <section className="border-b-2 border-blue-400 pb-16">
                         <Intro />
                     </section>
-                    <section className="border-b-2 border-blue-400 pb-8">
+                    <section className="border-b-2 border-blue-400">
+                        <Pitch supabaseUrl={supabaseUrl} supabaseKey={supabaseKey}/>
+                    </section>
+                    <section className="border-b-2 border-blue-400">
                         <EmailList supabaseUrl={supabaseUrl} supabaseKey={supabaseKey}/>
                     </section>
-                    <section className="border-b-2 border-blue-400 py-8">
+                    <section className="py-8">
                         <Skills />
                     </section>
-                    <Pitch />
                 </section>
             </section>
         </main>

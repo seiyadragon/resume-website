@@ -26,9 +26,6 @@
   .text-column {
     width: 25.65%;
   }
-  .skills-section {
-  height: 61rem;
-  }
 }
 
 @media (min-width: 1248px) {
