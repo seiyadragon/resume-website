@@ -96,20 +96,19 @@ const Index = ({quoteText, supabaseUrl, supabaseKey}: IndexProps) => {
             <section className="shadow-lg">
                 <Hero isWide={isWide} innerWidth={innerWidth}/>
             </section>
-            <section>
-                <Announcement />
-            </section>
             <section
                 style={{
                     "backgroundImage": "url(/stranger.jpg)",
                     "backgroundSize": `${isWide ? "cover" : "contain"}`,
                 }}
             >
-                <section className="backdrop-blur-lg"
+                
+                <section className="backdrop-blur-sm"
                     style={{
                         "backgroundColor": "rgb(15, 23, 42, 0.5)"
                     }}
                 >
+                    <Announcement />
                     <section className="py-8 pt-16">
                         <section className="lg:mx-48 md:mx-24 mx-12 text-blue-300 text-5xl py-4 px-4 border-2 border-blue-400 rounded-lg backdrop-blur-lg hover:backdrop-blur-3xl">
                             <section className="hover:opacity-90 opacity-60 transition-opacity">
