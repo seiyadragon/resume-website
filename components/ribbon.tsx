@@ -7,7 +7,7 @@ const Ribbon = () => {
             <section className="lg:mx-48 md:mx-24 mx-12 flex text-white">
                 <Image
                     className="rounded-full max-h-12"
-                    src="https://pbs.twimg.com/profile_images/1608051445844041735/AjCod35h_400x400.jpg"
+                    src="https://pbs.twimg.com/profile_images/1619633162962837504/ysIVwrUR_400x400.jpg"
                     alt="Profile Pic!"
                     width={40}
                     height={40}
